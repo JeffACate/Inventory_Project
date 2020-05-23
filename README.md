@@ -19,11 +19,11 @@ I will be using several new technologies including the python back-end and the J
   * Bootstrap
 
 #### To do
--[ ] Back-end
-  -[ ] Initialize Server
+- [ ] Back-end
+  - [ ] Initialize Server
 
--[ ] Middleware:
+- [ ] Middleware:
 
--[ ] Front-end:
-  -[ ] Initialize React
-  -[ ] Add Bootstrap for styles
+- [ ] Front-end:
+  - [ ] Initialize React
+  - [ ] Add Bootstrap for styles
