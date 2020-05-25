@@ -8,9 +8,7 @@ I will be using several new technologies including the Python back-end and the R
 
 * Back-End:
   * Python
-  * Docker
-
-* Middleware:
+  * Flask
 
 * Front-End:
   * JavaScript
@@ -19,10 +17,10 @@ I will be using several new technologies including the Python back-end and the R
 
 ### To do:
 - [ ] Back-end
-  - [ ] Initialize Server
-  - [ ]
-
-- [ ] Middleware:
+  - [x] Initialize python api
+  - [ ] Route endpoints to 'views' (.../client/<location>)
+  - [ ] create endpoints list
+  - [ ] document API ENDPOINTS
 
 - [ ] Front-end:
   - [ ] Initialize React app to consume RESTful Python API
