@@ -24,6 +24,9 @@ I will be using several new technologies including the Python back-end and the R
   - [ ] create endpoints list based on user stories
   - [ ] document API ENDPOINTS
 
+  -[ ] connect back end to front end - learn<a href="https://developer.okta.com/blog/2018/12/20/crud-app-with-python-flask-react">
+here</a>
+
 - [ ] Front-end:
   - [ ] Initialize React app
   - [ ] Add Bootstrap for styles
@@ -44,5 +47,3 @@ BONUS:
 - [] As a User, I want to be able to create an item to add to the collection
 - [] As a User, I want to be able to delete an item from the collection
 - [] As a User, I want to be able to edit an item in the collection
-
-<https://developer.okta.com/blog/2018/12/20/crud-app-with-python-flask-react>
