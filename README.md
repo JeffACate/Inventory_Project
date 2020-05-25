@@ -34,14 +34,14 @@ here</a>
   - [ ] Create components to fullfil user stories
  
 
-### User Stories
+### User Stories:
 
 - [ ]  As a User, I want to be able to see a list of movies - /GET/ALL MOVIES
 - [ ] As a User, I want to be able to create a movie to add to my collection - /POST/MOVIE
 - [ ] As a User, I want to be able to delete a movie from my collection - /POST/MOVIE
 - [ ] As a User, I want to be able to edit a movie in my collection - /PUT/MOVIE
 
-### BONUS:
+### Bonus:
 - [ ] As a User, I want to be able to select from a list of collections to edit
 - [ ] As a User, I want to be able to see a list of all items in the collection
 - [ ] As a User, I want to be able to create an item to add to the collection
