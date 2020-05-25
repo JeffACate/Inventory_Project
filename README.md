@@ -41,7 +41,7 @@ here</a>
 - [ ] As a User, I want to be able to delete a movie from my collection - /POST/MOVIE
 - [ ] As a User, I want to be able to edit a movie in my collection - /PUT/MOVIE
 
-BONUS:
+### BONUS:
 - [ ] As a User, I want to be able to select from a list of collections to edit
 - [ ] As a User, I want to be able to see a list of all items in the collection
 - [ ] As a User, I want to be able to create an item to add to the collection
