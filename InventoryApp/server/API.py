@@ -38,27 +38,33 @@ def home():
     '''
 
 # GET: ALL CONTACTS
-@app.route('/contacts/all', methods=['GET'])
+@app.route('/api/contacts/all', methods=['GET'])
 def GetAllContacts():
     return jsonify(contacts)
 
 # GET: BY ID
-@app.route('/contacts/', methods=['GET'])
-def GetContact():
+@app.route('/api/contacts', methods=['GET'])
+def api_id():
     # Check if an ID was provided as part of the URL.
     # If ID is provided, assign it to a variable.
     # If no ID is provided, display an error in the browser.
     if 'id' in request.args:
         id = int(request.args['id'])
     else:
-        return 'Error: No id field provided. Please choose and id.'
+        return "Error: No id field provided. Please specify an id."
     
+    print(request.args['id'])
+    # Create an empty list for our results
     results = []
 
+    # Loop through the data and match results that fit the requested ID.
+    # IDs are unique, but other fields might return many results
     for contact in contacts:
         if contact['id'] == id:
             results.append(contact)
 
+    # Use the jsonify function from Flask to convert our list of
+    # Python dictionaries to the JSON format.
     return jsonify(results)
 
 app.run()
