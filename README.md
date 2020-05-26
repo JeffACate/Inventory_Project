@@ -22,6 +22,9 @@ I will be using several new technologies including the Python back-end and the R
   * Bootstrap
 
 ### To do:
+##### IN PROGRESS: Clean up API Code, and create more endpoints.
+
+
 - [ ] Back-end
   - [x] Connect API to DB
   - [ ] Create CRUD Queries

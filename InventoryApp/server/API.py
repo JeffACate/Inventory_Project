@@ -50,13 +50,13 @@ def GetAllContacts():
 # GET: BY ID
 @app.route('/api/contacts', methods=['GET'])
 def api_id():
-    # Check if an ID was provided as part of the URL.
-    # If ID is provided, assign it to a variable.
-    # If no ID is provided, display an error in the browser.
+    # VERIFY id EXISTS
     if 'id' in request.args:
         id = int(request.args['id'])
     else:
         return "Error: No id field provided. Please specify an id."
+
+    # CALL DB AND QUERY FOR 
     statement = (f'SELECT * FROM Contacts WHERE id={id}')
     contact = QueryDB(statement)
 
