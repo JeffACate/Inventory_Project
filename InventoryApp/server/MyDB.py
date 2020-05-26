@@ -9,23 +9,29 @@ conn = pyodbc.connect(
 
 cursor = conn.cursor()
 
-
-
-def this(statement):
+def QueryDB(statement):
+    cursor = conn.cursor()
     print('funtion executed.')
     cursor.execute(statement)
+    contacts = []
     for row in cursor:
         id = row[0]
         first = row[1]
         last = row[2]
         year = row[3]
+        contacts.append(
+            {
+            'id':id,
+            'first':first,
+            'last':last,
+            'year':year
+            })
         print(f'   id = {id}\nfirst = {first}\n last = {last}\n year = {year}\n')
-        if first == 'Jeff':
-            print("Jeff was found\n\n")
-        else:
-            print('Jeff was not found!\n\n')
+    return contacts
+        
 
-this('SELECT * FROM Contacts')
-
+people = QueryDB('SELECT * FROM Contacts')
+for person in people:
+    print(person['id'],person['first'],person['last'],person['year'])
 cursor.close()
 
