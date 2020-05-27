@@ -11,6 +11,7 @@ I will be using several new technologies including the Python back-end and the R
 * Back-End:
   * Python
   * pyodbc
+  * MSSQL
 
 * Middleware:
   * Python
