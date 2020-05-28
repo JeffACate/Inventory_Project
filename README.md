@@ -1,4 +1,4 @@
-# Northwestern Mutual Interview Project
+# Interview Project
 
 This application is a basic archive system. It will allow you to create an inventory of household items. These items can be anything that you would like cataloged in your household(eg: movies, cleaning supplies, clothing).
 
