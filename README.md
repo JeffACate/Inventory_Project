@@ -29,15 +29,23 @@ I will be using several new technologies including the Python back-end and the R
 - [ ] Back-end
   - [x] Connect API to DB
   - [ ] Create CRUD Queries
+    - [ ] Create Create Queries
+    - [x] Create Read Queries
+    - [ ] Create Update Queries
+    - [x] Create Delete Queries
   - [ ] Create any additional Queries
   - [ ] Document ALL Queries
 
 - [ ] Middleware: 
   - [x] Initialize python api
   - [ ] Create CRUD endpoints
+    - [ ] Create Create endpoints
+    - [x] Create Read endpoints
+    - [ ] Create Update endpoints
+    - [x] Create Delete endpoints
   - [ ] Create any additional endpoints
   - [ ] Document ALL endpoints
-  - [ ] Implement <a href='https://kite.com/python/docs/flask.jsonify'>models/Contacts.py</a>
+  - [ ] Implement Contact model see<a href='https://kite.com/python/docs/flask.jsonify'>this.</a>
    
 - [ ] Front-end:
   - [ ] Initialize React app

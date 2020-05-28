@@ -39,7 +39,7 @@ def GetContactById():
     return jsonify(contact)
 
 # POST: DELETE
-@app.route('/api/contacts/delete', methods=['Delete'])
+@app.route('/api/contacts/delete', methods=['GET'])
 def DeleteContact():
     # VERIFY id EXISTS
     if 'id' in request.args:
@@ -51,5 +51,11 @@ def DeleteContact():
     message = MyDB.DeleteContact(id) 
     # RETURN JSON
     return jsonify(message)
+
+# @app.route('api/contacts/create', methods=['POST'])
+''' def CreateContact():
+    if 'first' in request.args and 'last' in request.args and 'year' in request.args:
+        if request.args['first'] not None and request.args['last'] not None and request.args['year'] not None:
+'''
 
 app.run()
