@@ -1,4 +1,5 @@
 import pyodbc
+import models.Contact as Models
 
 conn = pyodbc.connect(
     r"Driver={SQL Server};"
@@ -26,14 +27,14 @@ def GetContacts():
 def GetContact(id):
     row = cursor.execute(f'SELECT * FROM Contacts WHERE id={id}').fetchone()
     print(row)
-    contact = {
-            'id':row[0],
-            'first':row[1],
-            'last':row[2],
-            'year':row[3]
-    }
-    return contact
+    person = Models.Contact(row[0],row[1], row[2],row[3])
+    person.printObj()
+    return person
 
 def DeleteContact(id):
-    cursor.execute(f'DELETE FROM Contacts WHERE id={id}')
-    return f'1 contacts deleted'
+    response = cursor.execute(f'DELETE FROM Contacts WHERE id={id}')
+    print(response)
+    conn.commit()
+    return {
+        'message':f'1 contacts deleted'
+        }

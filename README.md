@@ -37,6 +37,7 @@ I will be using several new technologies including the Python back-end and the R
   - [ ] Create CRUD endpoints
   - [ ] Create any additional endpoints
   - [ ] Document ALL endpoints
+  - [ ] Implement <a href='https://kite.com/python/docs/flask.jsonify'>models/Contacts.py</a>
    
 - [ ] Front-end:
   - [ ] Initialize React app

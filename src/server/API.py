@@ -39,7 +39,7 @@ def GetContactById():
     return jsonify(contact)
 
 # POST: DELETE
-@app.route('/api/contacts/delete', methods=['DELETE'])
+@app.route('/api/contacts/delete', methods=['Delete'])
 def DeleteContact():
     # VERIFY id EXISTS
     if 'id' in request.args:
@@ -48,7 +48,7 @@ def DeleteContact():
         return "Error: No id field provided. Please specify an id."
 
     # CALL DB AND QUERY FOR 
-    message = MyDB.DeleteContact(id)
+    message = MyDB.DeleteContact(id) 
     # RETURN JSON
     return jsonify(message)
 
