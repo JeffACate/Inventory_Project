@@ -1,5 +1,6 @@
 import pyodbc
 import models.Contact as Models
+import json 
 
 Contact_Model = {
     'id' : 'id',
@@ -46,19 +47,26 @@ def GetContact(id):
 #INCOMPLETE
 def DeleteContact(id):
     cursor.execute(f'DELETE FROM Contacts WHERE id={id}')
+    conn.commit()
     return {
         'message':f'1 contacts deleted'
         }
 
-def CreateContact(contact):
-    query = f'''INSERT INTO Contacts(
-                    {Contact_Model['first']},
-                    {Contact_Model['last']},
-                    {Contact_Model['year']})
-                    VALUES(
-                        {contact['first']},
-                        {contact['last']},
-                        {contact['year']})'''
+def CreateContact(first, last, year):
+    query = f'''
+                INSERT INTO dbo.Contacts (First_Name, Last_Name, Birth_Year)
+                VALUES
+                ('{first}','{last}',{year})
+                '''
+
     cursor.execute(query)
+    conn.commit()
+    contact = {
+            'first': first,
+            'last': last,
+            'year': year,
+            'message': 'Contact successfullly created'
+    }
+    return contact
 
 

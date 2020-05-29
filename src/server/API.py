@@ -1,6 +1,7 @@
 import flask 
 from flask import request, jsonify, redirect, render_template
 import MyDB
+from MyDB import Contact_Model
 
 # SET UP FLASK APP
 # SET UP DEBUGGER
@@ -52,10 +53,13 @@ def DeleteContact():
     # RETURN JSON
     return jsonify(message)
 
-# @app.route('api/contacts/create', methods=['POST'])
-''' def CreateContact():
-    if 'first' in request.args and 'last' in request.args and 'year' in request.args:
-        if request.args['first'] not None and request.args['last'] not None and request.args['year'] not None:
-'''
+# POST: CREATE - ?first=<string>&last=<string>&year=<int>
+@app.route('/api/contacts/create', methods=['GET'])
+def CreateContact():
+    results = MyDB.CreateContact(request.args['first'],request.args['last'],int(request.args['year']))
+
+    # result = MyDB.CreateContact(request.args['first'], request.args['last'], int(request.args['year']))
+
+    return jsonify(results)
 
 app.run()
