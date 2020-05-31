@@ -53,7 +53,7 @@ I will be using several new technologies including the Python back-end and the R
    
 - [ ] Front-end:
   - [ ] Initialize React app using <a href="https://github.com/facebookincubator/create-react-app#create-react-app--">create-react-app</a>
-  - [ ] Add Bootstrap for styles
+  - [ ] Add <a href="https://create-react-app.dev/docs/adding-bootstrap/">Bootstrap</a> for styles
   - [ ] Consume RESTful Python API
  
 
@@ -70,3 +70,9 @@ I will be using several new technologies including the Python back-end and the R
 - [ ] As a User, I want to be able to create an item to add to the collection
 - [ ] As a User, I want to be able to delete an item from the collection
 - [ ] As a User, I want to be able to edit an item in the collection
+
+
+Helpful links:
+* <a href="https://dash.plotly.com/react-for-python-developers">React/Python</a>
+* <a href="https://developer.okta.com/blog/2018/12/20/crud-app-with-python-flask-react">CRUD-Python-Flask</a>
+
