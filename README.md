@@ -23,7 +23,7 @@ I will be using several new technologies including the Python back-end and the R
   * Bootstrap
 
 ### To do:
-##### IN PROGRESS: Clean up API Code, and create more endpoints.
+##### IN PROGRESS: Connect React to Python endpoints / import bootstrap
 
 
 - [ ] Back-end
@@ -45,7 +45,7 @@ I will be using several new technologies including the Python back-end and the R
     - [x] Create Delete endpoints
   - [ ] Create any additional endpoints
   - [ ] Document ALL endpoints
-  - [ ] Implement Contact model see<a href='https://kite.com/python/docs/flask.jsonify'>this.</a>
+  - [ ] Implement Contact model see <a href='https://kite.com/python/docs/flask.jsonify'>this.</a>
     - [x] Create Model
     - [x] Import Model
     - [ ] Optimize code to implement model 
@@ -65,7 +65,7 @@ I will be using several new technologies including the Python back-end and the R
 - [ ] As a User, I want to be able to edit a movie in my collection - /PUT/MOVIE
 
 ### Bonus:
-- [ ] As a User, I want to be able to select from a list of collections to edit
+- [ ] As a User, I want to be able to select from a list of collections to edit (administrator functions)
 - [ ] As a User, I want to be able to see a list of all items in the collection
 - [ ] As a User, I want to be able to create an item to add to the collection
 - [ ] As a User, I want to be able to delete an item from the collection
