@@ -52,7 +52,7 @@ I will be using several new technologies including the Python back-end and the R
       - [ ] Learn how to jsonify custom class
    
 - [ ] Front-end:
-  - [ ] Initialize React app
+  - [ ] Initialize React app using <a href="https://github.com/facebookincubator/create-react-app#create-react-app--">create-react-app</a>
   - [ ] Add Bootstrap for styles
   - [ ] Consume RESTful Python API
  
