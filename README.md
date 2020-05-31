@@ -29,7 +29,7 @@ I will be using several new technologies including the Python back-end and the R
 - [ ] Back-end
   - [x] Connect API to DB
   - [ ] Create CRUD Queries
-    - [ ] Create Create Queries
+    - [x] Create Create Queries
     - [x] Create Read Queries
     - [ ] Create Update Queries
     - [x] Create Delete Queries
@@ -39,13 +39,17 @@ I will be using several new technologies including the Python back-end and the R
 - [ ] Middleware: 
   - [x] Initialize python api
   - [ ] Create CRUD endpoints
-    - [ ] Create Create endpoints
+    - [x] Create Create endpoints
     - [x] Create Read endpoints
     - [ ] Create Update endpoints
     - [x] Create Delete endpoints
   - [ ] Create any additional endpoints
   - [ ] Document ALL endpoints
   - [ ] Implement Contact model see<a href='https://kite.com/python/docs/flask.jsonify'>this.</a>
+    - [x] Create Model
+    - [x] Import Model
+    - [ ] Optimize code to implement model 
+      - [ ] Learn how to jsonify custom class
    
 - [ ] Front-end:
   - [ ] Initialize React app
@@ -55,7 +59,7 @@ I will be using several new technologies including the Python back-end and the R
 
 ### User Stories:
 
-- [ ] As a User, I want to be able to see a list of movies - /GET/ALL MOVIES
+- [ ] As a User,d I want to be able to see a list of movies - /GET/ALL MOVIES
 - [ ] As a User, I want to be able to create a movie to add to my collection - /POST/MOVIE
 - [ ] As a User, I want to be able to delete a movie from my collection - /POST/MOVIE
 - [ ] As a User, I want to be able to edit a movie in my collection - /PUT/MOVIE
