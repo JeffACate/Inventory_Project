@@ -14,7 +14,7 @@ def home():
     return '''
     <html style="background-color: blue; color: yellow;">
         <div>
-            <h1 style="text-align: center;">Application Home Page</h1>
+            <h1 style="text-align: center;">Api / Page</h1>
         </div>
     <html>
     '''
@@ -57,9 +57,6 @@ def DeleteContact():
 @app.route('/api/contacts/create', methods=['GET'])
 def CreateContact():
     results = MyDB.CreateContact(request.args['first'],request.args['last'],int(request.args['year']))
-
-    # result = MyDB.CreateContact(request.args['first'], request.args['last'], int(request.args['year']))
-
     return jsonify(results)
 
 app.run()

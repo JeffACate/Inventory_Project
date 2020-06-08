@@ -1,20 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Router } from "react-router-dom";
-import Home from "./components/Home";
-import AllContacts from "./components/AllContacts";
+import NavBar from './components/NavBar';
 import './App.css';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div>
-        <Router component={Home} path="/" exact />
-        <Router component={AllContacts} path="/AllContacts" />
-        <Router component={Home} path="/" exact />
-      </div>
-    </BrowserRouter>
+  return ( 
+    <div>
+      <NavBar />
+      <h1>app</h1>
+    </div>
   );
 }
 
 export default App;
- 
