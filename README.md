@@ -54,7 +54,7 @@ I will be using several new technologies including the Python back-end and the R
 - [ ] Front-end:
   - [x] Initialize React app using <a href="https://github.com/facebookincubator/create-react-app#create-react-app--">create-react-app</a>
   - [x] Add <a href="https://create-react-app.dev/docs/adding-bootstrap/">Bootstrap</a> for styles
-  - [/] Consume RESTful Python API
+  - [ ] Consume RESTful Python API
  
 
 ### User Stories:
