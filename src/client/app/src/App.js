@@ -4,10 +4,7 @@ import './App.css';
 
 function App() {
   return ( 
-    <div>
       <NavBar />
-      <h1>app</h1>
-    </div>
   );
 }
 

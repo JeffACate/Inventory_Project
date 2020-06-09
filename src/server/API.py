@@ -1,12 +1,13 @@
-import flask 
-from flask import request, jsonify, redirect, render_template
+from flask import Flask, request, jsonify, redirect, render_template
+from flask_cors import CORS
 import MyDB
 from MyDB import Contact_Model
 
 # SET UP FLASK APP
 # SET UP DEBUGGER
-app = flask.Flask(__name__)
+app = Flask(__name__)
 app.config["DEBUG"] = True 
+CORS(app)
 
 # GET: HELLO WORLD STRING
 @app.route('/', methods=['GET'])

@@ -1,5 +1,5 @@
 import React, { useEffect, useState }  from 'react';
-// import NavBar from './NavBar';
+import Contact from '../models/Contact';
 
 export default function AllContacts() {
     const [contacts, getContacts] = useState(null);
@@ -20,19 +20,21 @@ export default function AllContacts() {
 
     }, []);
 
-    if(!contacts) return (
-        <div>
-            {/* <NavBar /> */}
+    if(contacts == null) {
+        return (
+        <>
             <h1>AllContacts.js rendered with NO Data!!</h1>
-        </div>
-    )
+        </>
+        
 
+    )}else{
+
+    
     return (
         <>
-        {/* <NavBar /> */}
         <div>
             <h1>"Hello World" from AllContacts.js</h1>
         </div>
         </>
-    )
+    )}
 }
