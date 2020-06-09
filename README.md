@@ -1,6 +1,6 @@
 # Interview Project
 
-This application is a basic archive system. It will allow you to create an inventory of household items. These items can be anything that you would like cataloged in your household(eg: movies, cleaning supplies, clothing).
+This application is a basic archive system. It will allow you to create an inventory of household items. These items can be anything that you would like cataloged in your household(eg: items, cleaning supplies, clothing).
 
 I will be using several new technologies including the Python back-end and the React front-end.
 
@@ -52,17 +52,17 @@ I will be using several new technologies including the Python back-end and the R
       - [ ] Learn how to jsonify custom class
    
 - [ ] Front-end:
-  - [ ] Initialize React app using <a href="https://github.com/facebookincubator/create-react-app#create-react-app--">create-react-app</a>
-  - [ ] Add <a href="https://create-react-app.dev/docs/adding-bootstrap/">Bootstrap</a> for styles
-  - [ ] Consume RESTful Python API
+  - [x] Initialize React app using <a href="https://github.com/facebookincubator/create-react-app#create-react-app--">create-react-app</a>
+  - [x] Add <a href="https://create-react-app.dev/docs/adding-bootstrap/">Bootstrap</a> for styles
+  - [/] Consume RESTful Python API
  
 
 ### User Stories:
 
-- [ ] As a User,d I want to be able to see a list of movies - /GET/ALL MOVIES
-- [ ] As a User, I want to be able to create a movie to add to my collection - /POST/MOVIE
-- [ ] As a User, I want to be able to delete a movie from my collection - /POST/MOVIE
-- [ ] As a User, I want to be able to edit a movie in my collection - /PUT/MOVIE
+- [ ] As a User,d I want to be able to see a list of items - /GET/ALL items
+- [ ] As a User, I want to be able to create a item to add to my collection - /POST/item
+- [ ] As a User, I want to be able to delete a item from my collection - /POST/item
+- [ ] As a User, I want to be able to edit a item in my collection - /PUT/item
 
 ### Bonus:
 - [ ] As a User, I want to be able to select from a list of collections to edit (administrator functions)

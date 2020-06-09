@@ -1,5 +1,4 @@
 import React, { useEffect, useState }  from 'react';
-import Contact from '../models/Contact';
 
 export default function AllContacts() {
     const [contacts, getContacts] = useState(null);

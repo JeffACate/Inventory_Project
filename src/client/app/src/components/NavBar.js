@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Router } from "react-router-dom";
+import { BrowserRouter, Link, Route } from "react-router-dom";
 import AllContacts from "./AllContacts";
 import Home from "./Home";
 
@@ -14,7 +14,7 @@ export default function NavBar() {
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse nav-right" id="navbarSupportedContent">
+            <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul className="nav navbar-nav center">
                 <li className="nav-item">
                   <Link to="/" className="nav-link">Home<span className="sr-only">(current)</span></Link>
@@ -64,7 +64,7 @@ export default function NavBar() {
 
 
 
-{/* // <ul className="nav">
+//  <ul className="nav">
 // <li className="nav-item">
 //   <Link to="/" className="nav-link">Home</Link>
 // </li>
@@ -74,4 +74,4 @@ export default function NavBar() {
 // <li className="nav-item">
 //   <Link to="/" className="nav-link">Search</Link>
 // </li>
-// </ul> */}
+// </ul> 
