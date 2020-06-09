@@ -46,7 +46,10 @@
   display:inline;
 }
 
-
+img {
+  height: 50vh;
+  width: 25vmax;
+}
 
 
 

@@ -9,12 +9,12 @@ export default function NavBar() {
     return (
       <>
       <BrowserRouter>
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <h2 className="nav-brand display-4 text-white">Contacts</h2>
+          <nav className="navbar navbar-expand-lg  mb-5 navbar-dark bg-dark">
+            <h2 className="nav-brand display-4 text-white">Inventory</h2>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="collapse navbar-collapse nav-right" id="navbarSupportedContent">
               <ul className="nav navbar-nav center">
                 <li className="nav-item">
                   <Link to="/" className="nav-link">Home<span className="sr-only">(current)</span></Link>
