@@ -10,6 +10,7 @@ export default function NavBar() {
       <>
       <BrowserRouter>
           <nav className="navbar navbar-expand-lg  mb-5 navbar-dark bg-dark">
+            <div className="container">
             <h2 className="nav-brand display-4 text-white">Inventory</h2>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -42,6 +43,7 @@ export default function NavBar() {
                 <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form> */}
             </div>
+            </div>
           </nav>
           <main className="container">
               <Route path="/" component={Home} exact />
@@ -50,6 +52,13 @@ export default function NavBar() {
               <Route path="/Contact" component={Contact} /> */}
           </main>
         </BrowserRouter>
+        <footer className="footer border-top border-dark bg-dark fixed-bottom p-2 text-white-50">
+          <div className="container">
+            <div className="row justify-content-center">
+              <span>Creator : Jeff A Cate | Images from various <a className="text-white " href="www.unsplash.com">Unsplash</a> artists | &copy; 2020</span>
+            </div>
+          </div>
+        </footer>
         </>
     );
 }
