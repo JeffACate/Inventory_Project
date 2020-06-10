@@ -5,7 +5,6 @@ This application is a basic archive system. It will allow you to create an inven
 I will be using several new technologies including the Python back-end and the React front-end.
 
 
-
 ### Technologies:
 
 * Back-End:
