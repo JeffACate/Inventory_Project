@@ -9,9 +9,9 @@ export default function NavBar() {
     return (
       <>
       <BrowserRouter>
-          <nav className="navbar navbar-expand-lg  mb-5 navbar-dark bg-dark">
+          <nav className="navbar navbar-expand-lg  mb-3 navbar-dark bg-dark">
             <div className="container">
-            <h2 className="nav-brand display-4 text-white">Inventory</h2>
+            <h3 className="nav-brand text-white">Inventory</h3>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -45,12 +45,16 @@ export default function NavBar() {
             </div>
             </div>
           </nav>
+          
+          
           <main className="container">
               <Route path="/" component={Home} exact />
               <Route path="/AllContacts" component={AllContacts} />
               {/* <Route path="/FindContact" component={FindContact} />
               <Route path="/Contact" component={Contact} /> */}
           </main>
+
+
         </BrowserRouter>
         <footer className="footer border-top border-dark bg-dark fixed-bottom p-2 text-white-50">
           <div className="container">

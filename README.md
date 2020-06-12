@@ -58,7 +58,7 @@ I will be using several new technologies including the Python back-end and the R
 
 ### User Stories:
 
-- [ ] As a User,d I want to be able to see a list of items - /GET/ALL items
+- [ ] As a User, I want to be able to see a list of items - /GET/ALL items
 - [ ] As a User, I want to be able to create a item to add to my collection - /POST/item
 - [ ] As a User, I want to be able to delete a item from my collection - /POST/item
 - [ ] As a User, I want to be able to edit a item in my collection - /PUT/item
