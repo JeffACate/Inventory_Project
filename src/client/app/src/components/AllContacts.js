@@ -1,9 +1,9 @@
 import React, { useEffect, useState }  from 'react';
-import ReactDOM, { render } from "react-dom";
 
 export default function AllContacts() {
     const [contacts, getContacts] = useState(null);
-    
+    const [rows, getRows] = useState(null);
+
     useEffect(() => {
         fetchContacts();
 
@@ -11,13 +11,27 @@ export default function AllContacts() {
             try{
                 const res = await fetch('http://localhost:5000/api/contacts/all');
                 const data = await res.json();
-                getContacts(data);      
-                console.log(data); 
+                getContacts(data);
             }catch{
                 console.error();
             }
         }
     }, []);
+
+    function getRows(){
+        // console.log('data', data);
+        console.log('contacts',contacts);
+        if (contacts){
+            contacts.forEach(contact => {
+                rows.push(<tr>
+                            <td>{contact['id']}</td>
+                            <td>{contact['first']}</td>
+                            <td>{contact['last']}</td>
+                            <td>{contact['year']}</td>
+                        </tr>);
+            });
+        }
+    }
 
     return (
         <>
@@ -25,25 +39,21 @@ export default function AllContacts() {
                 <h2 className="display-4">Contacts</h2>
             </div>
             <div className="row">
-                <table className="table table-striped text-center table-hover table-dark">
+                <table className="table text-center table-dark">
                     <thead>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">FIRST</th>
-                            <th scope="col">LAST</th>
-                            <th scope="col">BIRTH YEAR</th>
+                            <th>ID</th>
+                            <th>FIRST</th>
+                            <th>LAST</th>
+                            <th>BIRTH YEAR</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {getRows()}
                     </tbody>
                 </table>
+                
             </div>
         </>
     )
-}   
-
-
-
-
-    
-    {/* {this.rows} */}
+}
